@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  geonetwork:
+    # Referência: https://hub.docker.com/_/geonetwork
+    image: cprm/inde-geonetwork:${GEONETWORK_VERSION}
+    build:
+      context: geonetwork
+      args:
+        - GEONETWORK_IMAGE_TAG=${GEONETWORK_VERSION}-postgres
