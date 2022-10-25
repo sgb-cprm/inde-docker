@@ -26,3 +26,9 @@ if [ -n "$GEONETWORK_DATABASE" ]; then
 	create_user_and_database $GEONETWORK_DATABASE $GEONETWORK_USER $GEONETWORK_PASSWORD
 	echo "Geonetwork geodatabase created"
 fi
+
+if [ -n "$GEOHEALTHCHECK_DATABASE" ]; then
+	echo "GeoHealthCheck database creation requested: $GEOHEALTHCHECK_DATABASE"
+	create_user_and_database $GEOHEALTHCHECK_DATABASE $GEOHEALTHCHECK_USER $GEOHEALTHCHECK_PASSWORD
+	echo "GeoHealthCheck database created"
+fi

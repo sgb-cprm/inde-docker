@@ -44,7 +44,52 @@ services:
     volumes:
       - geoserver-data:${GEOSERVER_DATA_DIR}
     depends_on:
-      - db    
+      - db
+
+  geohealthcheck:
+    image: geopython/geohealthcheck:${GEOHEALTHCHECK_VERSION}
+    restart: on-failure
+    environment:
+      - SCRIPT_NAME=/geohealthcheck
+      - SQLALCHEMY_DATABASE_URI=postgresql://${GEOHEALTHCHECK_USER}:${GEOHEALTHCHECK_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${GEOHEALTHCHECK_DATABASE}
+      - GHC_RUNNER_IN_WEBAPP=${GHC_RUNNER_IN_WEBAPP}
+      - GHC_NOTIFICATIONS=${GHC_NOTIFICATIONS}
+      - GHC_NOTIFICATIONS_VERBOSITY=${GHC_NOTIFICATIONS_VERBOSITY}
+      - GHC_ADMIN_EMAIL=${GHC_ADMIN_EMAIL}
+      - GHC_NOTIFICATIONS_EMAIL=${GHC_NOTIFICATIONS_EMAIL}
+      - GHC_SMTP_SERVER=${GHC_SMTP_SERVER}
+      - GHC_SMTP_PORT=${GHC_SMTP_PORT}
+      - GHC_SMTP_TLS=${GHC_SMTP_TLS}
+      - GHC_SMTP_SSL=${GHC_SMTP_SSL}
+      - GHC_SMTP_USERNAME=${GHC_SMTP_USERNAME}
+      - GHC_SMTP_PASSWORD=${GHC_SMTP_PASSWORD}
+      - GHC_LOG_LEVEL=${GHC_LOG_LEVEL}
+    depends_on:
+      - db
+    ports:
+      - 81:80
+
+  geohealthcheck-runner:
+    image: geopython/geohealthcheck:${GEOHEALTHCHECK_VERSION}
+    restart: on-failure
+    environment:
+      - SQLALCHEMY_DATABASE_URI=postgresql://${GEOHEALTHCHECK_USER}:${GEOHEALTHCHECK_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${GEOHEALTHCHECK_DATABASE}
+      - GHC_RUNNER_IN_WEBAPP=${GHC_RUNNER_IN_WEBAPP}
+      - GHC_NOTIFICATIONS=${GHC_NOTIFICATIONS}
+      - GHC_NOTIFICATIONS_VERBOSITY=${GHC_NOTIFICATIONS_VERBOSITY}
+      - GHC_ADMIN_EMAIL=${GHC_ADMIN_EMAIL}
+      - GHC_NOTIFICATIONS_EMAIL=${GHC_NOTIFICATIONS_EMAIL}
+      - GHC_SMTP_SERVER=${GHC_SMTP_SERVER}
+      - GHC_SMTP_PORT=${GHC_SMTP_PORT}
+      - GHC_SMTP_TLS=${GHC_SMTP_TLS}
+      - GHC_SMTP_SSL=${GHC_SMTP_SSL}
+      - GHC_SMTP_USERNAME=${GHC_SMTP_USERNAME}
+      - GHC_SMTP_PASSWORD=${GHC_SMTP_PASSWORD}
+      - GHC_LOG_LEVEL=${GHC_LOG_LEVEL}
+    depends_on:
+      - db
+    entrypoint:
+      - /run-runner.sh  
   
   db:
     image: postgis/postgis:13-3.2-alpine
@@ -62,12 +107,16 @@ services:
       - GEONETWORK_DATABASE=${GEONETWORK_DATABASE}
       - GEONETWORK_USER=${GEONETWORK_USER}
       - GEONETWORK_PASSWORD=${GEONETWORK_PASSWORD}
+      # GeoHeathCheck
+      - GEOHEALTHCHECK_DATABASE=${GEOHEALTHCHECK_DATABASE}
+      - GEOHEALTHCHECK_USER=${GEOHEALTHCHECK_USER}
+      - GEOHEALTHCHECK_PASSWORD=${GEOHEALTHCHECK_PASSWORD}
     volumes:
       - postgres-data:${POSTGRES_DATA_DIR}
       - ./postgis/initdb.sh:/docker-entrypoint-initdb.d/20-init-inde-databases.sh:ro
 
 volumes:
   geonetwork-data:
+  geonetwork-index:
   postgres-data:
   geoserver-data:
-  geonetwork-index:
