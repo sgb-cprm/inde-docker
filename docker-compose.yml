@@ -11,17 +11,20 @@ services:
       - 80:80
 
   geonetwork:
-    image: cprm/inde-geonetwork:${GEONETWORK_VERSION}
+    image: ghcr.io/sgb-cprm/geonetwork:3.10.2
     restart: on-failure
     environment:
-      - DATA_DIR=${GEONETWORK_DATA_DIR}
-      - POSTGRES_DB_HOST=${POSTGRES_HOST}
-      - POSTGRES_DB_PORT=${POSTGRES_PORT}
-      - POSTGRES_DB_NAME=${GEONETWORK_DATABASE} 
-      - POSTGRES_DB_USERNAME=${GEONETWORK_USER}
-      - POSTGRES_DB_PASSWORD=${GEONETWORK_PASSWORD}
+      - GEONETWORK_DATA_DIR=${GEONETWORK_DATA_DIR}
+      - GEONETWORK_LUCENE_DIR=${GEONETWORK_DATA_DIR}
+      - GEONETWORK_DB_TYPE=postgis
+      - GEONETWORK_DB_HOST=${POSTGRES_HOST}
+      - GEONETWORK_DB_PORT=${POSTGRES_PORT}
+      - GEONETWORK_DB_DATABASE=${GEONETWORK_DATABASE} 
+      - GEONETWORK_DB_USERNAME=${GEONETWORK_USER}
+      - GEONETWORK_DB_PASSWORD=${GEONETWORK_PASSWORD}
     volumes:
       - geonetwork-data:${GEONETWORK_DATA_DIR}
+      - geonetwork-index:${GEONETWORK_LUCENE_DIR}
     depends_on:
       - db
 
@@ -46,8 +49,8 @@ services:
   db:
     image: postgis/postgis:13-3.2-alpine
     restart: on-failure
-    ports:
-      - 5432:5432
+    # ports:
+    #   - 5432:5432
     environment:
       - POSTGRES_PASSWORD=postgres@INDE
       - PGDATA=${POSTGRES_DATA_DIR}
@@ -67,3 +70,4 @@ volumes:
   geonetwork-data:
   postgres-data:
   geoserver-data:
+  geonetwork-index:

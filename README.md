@@ -29,8 +29,8 @@ Esta é a unica imagem que recebeu algum tipo de extensão, via **Dockerfile**. 
 Para os que desejarem produzir os próprios builds da imagem, o "build arg" do **Dockerfile** precisa receber como valor o [nome da tag correspondente a versão do Geonetwork a ser utilizado](https://hub.docker.com/_/geonetwork?tab=tags).
 
 ``` bash
-# Exemplo: Criação de uma imagem de geonetwork com usando a versão 3.10.6, com banco de dados H2 como backend
-GEONETWORK_VERSION=3.10.6 && docker build --build-arg GEONETWORK_IMAGE_TAG=${GEONETWORK_VERSION} -t cprm/inde-geonetwork:${GEONETWORK_VERSION} geonetwork/
+# Exemplo: Criação de uma imagem de geonetwork com usando a versão 3.10.6.
+GEONETWORK_VERSION=3.10.6 && docker build --build-arg GEONETWORK_VERSION=${GEONETWORK_VERSION} -t ghcr.io/sgb-cprm/geonetwork:${GEONETWORK_VERSION} geonetwork/
 ```
 
 ### Serviço de Mapas (Geoserver)
@@ -65,6 +65,7 @@ Para executar o stack sem o banco de dados em container, é necessário criar do
 
 - **GEONETWORK_VERSION:** Tag referente a versão utilizada do Geonetwork (padrão ```3.10.2```)
 - **GEONETWORK_DATA_DIR:** Diretório de dados do geonetwork dentro do container (padrão ```/srv/geonetwork/data```)
+- **GEONETWORK_LUCENE_DIR:** Diretório de índices do geonetwork dentro do container (padrão ```/srv/geonetwork/lucene```)
 
 Credenciais de banco de dados do Geonetwork
 
