@@ -39,6 +39,12 @@ Junto do serviço de metadados, está disponível, para referência, uma instân
 
 As referências para configurações e ajustes estão disponíveis na [Página da Imagem](https://hub.docker.com/r/kartoza/geoserver)
 
+### Serviço de Monitoramento e Quality Of Service (GeoHealthCheck)
+
+O GeoHealthCheck  é uma aplicação Python que tem como objetivo monitorar a disponibilidade de Geoserviços OGC.
+
+As referências para configurações e ajustes estão disponíveis na [Página do GeoHealthCheck](https://geohealthcheck.org/)
+
 ### Banco de Dados Espacial (PostGIS)
 
 Este stack possui como backend um banco de dados PostgreSQL, com PostGIS. Junto do mesmo, há um pequeno script para a criação dos dois bancos, a partir de variáveis de ambiente definidas
@@ -84,6 +90,15 @@ As credenciais de banco de dados do Geoserver referem-se, inicialmente, aos cont
 - **GEOSERVER_USER:** geoserver
 - **GEOSERVER_PASSWORD:** geoserver@INDE
 
+### GeoHealthCheck
+
+- **GEOHEALTHCHECK_VERSION:** Tag referente a versão utilizada do GeoHealthCheck (padrão ```0.9.0```)
+- **GEOHEALTHCHECK_DATABASE:** geohealthcheck
+- **GEOHEALTHCHECK_USER:** geohealthcheck
+- **GEOHEALTHCHECK_PASSWORD:** geohealthcheck2INDE
+
+As demais configurações estão disponíveis no site da [Documentação do Projeto](https://docs.geohealthcheck.org/).
+
 ## Construção da imagem em docker local
 
 ```bash
@@ -104,3 +119,4 @@ source .env && docker-compose up
 - Imagem Docker de [Geoserver](https://hub.docker.com/r/kartoza/geoserver), desenvolvido por [Kartoza](https://kartoza.com/en/)
 - Imagem de [PostGIS](https://hub.docker.com/r/postgis/postgis) dos [desenvolvedores](http://postgis.net/) da extensão
 - Imagem Docker Oficial de [PostgreSQL](https://registry.hub.docker.com/_/postgres)
+- Site do Projeto [GeoHealthCheck](https://geohealthcheck.org/)
