@@ -1,0 +1,20 @@
+catalog/components/common/popup/PopupService.js	Correção de bug no scroll ao escolher um contato no diretório durante a edição de metadados
+catalog/locales/pt-admin.json	Tradução
+catalog/locales/pt-core.json	Tradução
+catalog/locales/pt-editor.json	Tradução
+catalog/locales/pt-search.json	Tradução
+catalog/views/default/templates/recordView.html	Correção de bug que não exibe múltiplas escalas nos metadados
+loc/por/xml/i18n.xml	Adição de arquivo de internacionalização faltante
+WEB-INF/classes/setup/sql/migrate/v303/migrate-default.sql	Correção da migração sobre a tabela users, coluna enabled
+WEB-INF/classes/setup/sql/migrate/v304/migrate-default.sql	Correção da migração sobre a tabela harvesterdata, coluna key/keyvalue
+WEB-INF/classes/setup/sql/migrate/v322/migrate-default.sql	Correção da migração sobre a tabela users, coluna isenabled/enabled; tabela groups colunas enablecategoriesrestriction e enableallowedcategories
+WEB-INF/config-db/database_migration.xml	Correções gerais no procedimento de migração
+WEB-INF/config.properties	Força idioma padrão
+WEB-INF/config.xml	Idioma padrão
+WEB-INF/config-spring-geonetwork.xml	Correção do endereço do mapa base na extensão espacial
+WEB-INF/data/config/codelist/external/thesauri/place/regions.rdf	Tradução
+WEB-INF/data/config/schema_plugins/iso19139/loc/por/codelists.xml	Tradução
+WEB-INF/data/config/schema_plugins/iso19139/loc/por/labels.xml	Tradução
+WEB-INF/data/config/schema_plugins/iso19139/loc/por/strings.xml	Tradução
+WEB-INF/lib/domain-3.10.2-0.jar	Ver código fonte
+/domain/src/main/java/org/fao/geonet/domain/MetadataCategory.java	Correção de bug na exibição completa dos metadados (enviada ao projeto do GeoNetwork)

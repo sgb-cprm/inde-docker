@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+
+  <!-- XSD error translation -->
+  <invalidElement>Conteúdo inválido no elemento </invalidElement>
+  <onElementOf>Um dos seguintes elementos </onElementOf>
+  <isExpected> era esperado.</isExpected>
+  <isNotComplete> não está completo.</isNotComplete>
+  <elementLocated> Elemento pai é </elementLocated>
+  <missingElement>Elemento faltando em </missingElement>
+  <invalidValue>Valor inválido ou faltando.</invalidValue>
+  <notValidFor> não é um valor válido para </notValidFor>
+  <xsdErrorIs>Erro XSD é: </xsdErrorIs>
+  <inElement> no elemento </inElement>
+  <enum1>Valor </enum1>
+  <enum2> não é válido para o campo </enum2>
+  <enum3>Valores em potencial são: </enum3>
+
+
+  <understandResource>Informação sobre o conjunto de dados</understandResource>
+  <relatedResources>Serviços e dados relacionados</relatedResources>
+  <techInfo>Informação técnica</techInfo>
+  <contactInfo>Informação de contato</contactInfo>
+  <mdContactInfo>Responsável pelo metadado</mdContactInfo>
+  <refDate>Data de referência</refDate>
+  <temporalRef>Informação temporal</temporalRef>
+  <constraintInfo>Informação de restrição</constraintInfo>
+  <xml_iso19139>Save this metadata as an ISO19139 XML file</xml_iso19139>
+  <xml_iso19139Tooai_dc>Save this metadata as an OAI Dublin Core XML file
+  </xml_iso19139Tooai_dc>
+  <resourceLineageTab>Linhagem</resourceLineageTab>
+
+  <advanced>Completo</advanced>
+  <default>Padrão</default>
+  <simple>Simples</simple>
+  <inspire>INSPIRE</inspire>
+  <inspireTheme>INSPIRE themes</inspireTheme>
+  <inspireThemeMandatory>INSPIRE themes*</inspireThemeMandatory>
+  <resource>Recurso</resource>
+  <xml>XML</xml>
+  <metadata>Metametadado</metadata>
+  <identificationInfo>Identificação</identificationInfo>
+  <distributionInfo>Distribuição</distributionInfo>
+  <dataQualityInfo>Qualidade</dataQualityInfo>
+  <resourceLineage>Linhagem</resourceLineage>
+  <spatialRepresentationInfo>Repres. espacial</spatialRepresentationInfo>
+  <referenceSystemInfo>Sist. de referência</referenceSystemInfo>
+  <contentInfo>Conteúdo</contentInfo>
+  <portrayalCatalogueInfo>Catálogo de rep.</portrayalCatalogueInfo>
+  <metadataConstraints>Restrição do MD</metadataConstraints>
+  <metadataMaintenance>Manutenção do MD</metadataMaintenance>
+  <applicationSchemaInfo>Aplicação</applicationSchemaInfo>
+  <acquisitionInformation>Aquisição</acquisitionInformation>
+  <qualityMeasures>Medidas de qualidade</qualityMeasures>
+
+  <bboxesSection>Extensão espacial</bboxesSection>
+  <overviews>Visões gerais</overviews>
+  <metadataInXML>XML</metadataInXML>
+  <providedBy>Fornecido por</providedBy>
+  <shareOnSocialSite>Compartilhar em mídias sociais</shareOnSocialSite>
+  <viewMode>Visualizações</viewMode>
+  <linkToPortal>Link para o portal</linkToPortal>
+  <linkToPortal-help>Leia aqui todos os detalhes e acesse os dados.</linkToPortal-help>
+  <citationProposal>Proposta de citação</citationProposal>
+  <citationProposal-help>Esta proposta foi gerada automaticamente, verifique se os autores dos metadados não especificaram requisitos de citação específicos.</citationProposal-help>
+  <associatedResources>Recursos associados</associatedResources>
+
+
+  <add-resource-id>Calcular identificador de recurso</add-resource-id>
+  <add-resource-idHelp>Compõe o identificador de recurso usando a URL do catálogo e o identificador (ex.: 
+    http://www.organization.org/catalogue/5391bf69-44bc-4ea0-8cc0-6cf6c3bc81ae).</add-resource-idHelp>
+  <add-extent-from-geokeywords>Calcular a extensão espacial por palavra-chave</add-extent-from-geokeywords>
+  <add-extent-from-geokeywordsHelp>Analisa cada palavra-chave do tipo lugar e adiciona a extensão correspondente.</add-extent-from-geokeywordsHelp>
+  <extent>Retângulo envolvente</extent>
+  <spatialExtent>Extensão espacial</spatialExtent>
+  <freeTextKeywords>Outras palavras-chave</freeTextKeywords>
+  <noThesaurusName>Palavras-chave</noThesaurusName>
+</strings>

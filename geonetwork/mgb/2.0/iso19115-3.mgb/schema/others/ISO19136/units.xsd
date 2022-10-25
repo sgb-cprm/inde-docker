@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.opengis.net/gml/3.2" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" elementFormDefault="qualified" xml:lang="en" version="3.2.1.2">
+	<annotation>
+		<appinfo source="urn:x-ogc:specification:gml:schema-xsd:units:3.2.1">units.xsd</appinfo>
+		<documentation>See ISO/DIS 17.2.
+Several GML Schema components concern or require a reference scale or units of measure.  Units are required for quantities that may occur as values of properties of feature types, as the results of observations, in the range parameters of a coverage, and for measures used in Coordinate Reference System definitions. 
+The basic unit definition is an extension of the general gml:Definition element defined in 16.2.1.  Three specialized elements for unit definition are further derived from this. 
+This model is based on the SI system of units [ISO 1000], which distinguishes between Base Units and Derived Units.  
+-	Base Units are the preferred units for a set of orthogonal fundamental quantities which define the particular system of units, which may not be derived by combination of other base units.  
+-	Derived Units are the preferred units for other quantities in the system, which may be defined by algebraic combination of the base units.  
+In some application areas Conventional units are used, which may be converted to the preferred units using a scaling factor or a formula which defines a re-scaling and offset.  The set of preferred units for all physical quantity types in a particular system of units is composed of the union of its base units and derived units.  
+Unit definitions are substitutable for the gml:Definition element declared as part of the dictionary model.  A dictionary that contains only unit definitions and references to unit definitions is a units dictionary.
+
+GML is an OGC Standard.
+Copyright (c) 2007,2010 Open Geospatial Consortium, Inc. All Rights Reserved.
+To obtain additional rights of use, visit http://www.opengeospatial.org/legal/ .
+		</documentation>
+	</annotation>
+	<include schemaLocation="gml.xsd"/>
+	<include schemaLocation="dictionary.xsd"/>
+	<element name="unitOfMeasure" type="gml:UnitOfMeasureType">
+		<annotation>
+			<documentation>The element gml:unitOfMeasure is a property element to refer to a unit of measure. This is an empty element which carries a reference to a unit of measure definition.</documentation>
+		</annotation>
+	</element>
+	<complexType name="UnitOfMeasureType">
+		<sequence/>
+		<attribute name="uom" type="gml:UomIdentifier" use="required"/>
+	</complexType>
+	<element name="UnitDefinition" type="gml:UnitDefinitionType" substitutionGroup="gml:Definition">
+		<annotation>
+			<documentation>A gml:UnitDefinition is a general definition of a unit of measure. This generic element is used only for units for which no relationship with other units or units systems is known.
+The content model of gml:UnitDefinition adds three additional properties to gml:Definition, gml:quantityType, gml:quantityTypeReference and gml:catalogSymbol.  
+The gml:catalogSymbol property optionally gives the short symbol used for this unit. This element is usually used when the relationship of this unit to other units or units systems is unknown.</documentation>
+		</annotation>
+	</element>
+	<complexType name="UnitDefinitionType">
+		<complexContent>
+			<extension base="gml:DefinitionType">
+				<sequence>
+					<element ref="gml:quantityType" minOccurs="0"/>
+					<element ref="gml:quantityTypeReference" minOccurs="0"/>
+					<element ref="gml:catalogSymbol" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<element name="quantityType" type="gml:StringOrRefType">
+		<annotation>
+			<documentation>The gml:quantityType property indicates the phenomenon to which the units apply. This element contains an informal description of the phenomenon or type of physical quantity that is measured or observed. When the physical quantity is the result of an observation or measurement, this term is known as observable type or measurand.
+The use of gml:quantityType for references to remote values is deprecated.</documentation>
+		</annotation>
+	</element>
+	<element name="quantityTypeReference" type="gml:ReferenceType">
+		<annotation>
+			<documentation>The gml:quantityTypeReference property indicates the phenomenon to which the units apply. The content is a reference to a remote value.</documentation>
+		</annotation>
+	</element>
+	<element name="catalogSymbol" type="gml:CodeType">
+		<annotation>
+			<documentation>The catalogSymbol is the preferred lexical symbol used for this unit of measure.
+The codeSpace attribute in gml:CodeType identifies a namespace for the catalog symbol value, and might reference the external catalog. The string value in gml:CodeType contains the value of a symbol that should be unique within this catalog namespace. This symbol often appears explicitly in the catalog, but it could be a combination of symbols using a specified algebra of units.</documentation>
+		</annotation>
+	</element>
+	<!-- REMOVIDO BaseUnit -->
+	<!-- REMOVIDO DerivedUnit -->
+	<!-- REMOVIDO ConventionalUnit -->
+</schema>

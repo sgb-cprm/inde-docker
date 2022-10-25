@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/1.0"
+  xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+  xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0"
+  elementFormDefault="qualified"
+  targetNamespace="http://standards.iso.org/iso/19115/-3/lan/1.0" version="1.0">
+<!--   <include schemaLocation="lan.xsd"/> -->
+  <import namespace="http://standards.iso.org/iso/19115/-3/gco/1.0"
+    schemaLocation="../../../../19115/-3/gco/1.0/gco.xsd"/>
+  <import namespace="http://standards.iso.org/iso/19115/-3/cit/1.0"
+    schemaLocation="../../../../19115/-3/cit/1.0/cit.xsd"/>
+  <!-- Arquivo editado por Emerson Xavier 2020 -->
+
+  <element name="CountryCode" substitutionGroup="gco:CharacterString" type="gco:CodeListValue_Type"/>
+  <complexType name="CountryCode_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="lan:CountryCode"/>
+    </sequence>
+    <attribute ref="gco:nilReason"/>
+  </complexType>
+  <element name="LanguageCode" substitutionGroup="gco:CharacterString" type="gco:CodeListValue_Type"/>
+  <complexType name="LanguageCode_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="lan:LanguageCode"/>
+    </sequence>
+    <attribute ref="gco:nilReason"/>
+  </complexType>
+  
+  <!-- LocalisedCharacterString is not handled by Perfil MGB -->
+  
+  <element name="MD_CharacterSetCode" substitutionGroup="gco:CharacterString"
+    type="gco:CodeListValue_Type"/>
+  <complexType name="MD_CharacterSetCode_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="lan:MD_CharacterSetCode"/>
+    </sequence>
+    <attribute ref="gco:nilReason"/>
+  </complexType>
+
+  <!-- PT_FreeText removed -->
+
+  <element name="PT_Locale" substitutionGroup="gco:AbstractObject" type="lan:PT_Locale_Type"/>
+  <complexType name="PT_Locale_Type">
+    <complexContent>
+      <extension base="gco:AbstractObject_Type">
+        <sequence>
+          <element name="language" type="lan:LanguageCode_PropertyType"/>
+          <element minOccurs="0" name="country" type="lan:CountryCode_PropertyType"/>
+          <element name="characterEncoding" type="lan:MD_CharacterSetCode_PropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PT_Locale_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="lan:PT_Locale"/>
+    </sequence>
+    <attributeGroup ref="gco:ObjectReference"/>
+    <attribute ref="gco:nilReason"/>
+  </complexType>
+  <!-- PT_LocaleContainer removed -->
+</schema>

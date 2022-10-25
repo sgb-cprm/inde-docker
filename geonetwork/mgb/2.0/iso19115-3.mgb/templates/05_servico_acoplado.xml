@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MD_Metadata
+  xmlns    ="http://standards.iso.org/iso/19115/-3/mdb/2.0"
+  xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+  xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0"
+  xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0"
+  xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
+  xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0"
+  xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/1.0"
+  xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0"
+  xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0"
+  xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0"
+  xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0"
+  xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0"
+  xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0"
+  xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0"
+  xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0"
+  xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0"
+  xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0"
+  xmlns:gml="http://www.opengis.net/gml/3.2"
+  >
+  
+  <metadataIdentifier>
+    <mcc:MD_Identifier>
+      <mcc:code>
+        <gco:CharacterString>uuid</gco:CharacterString>
+      </mcc:code>
+    </mcc:MD_Identifier>
+  </metadataIdentifier>
+  
+  <defaultLocale>
+    <lan:PT_Locale>
+      <lan:language>
+        <lan:LanguageCode codeList="codelist.xml#LanguageCode" codeListValue="por"/>
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="codelist.xml#MD_CharacterSetCode" codeListValue="utf8"/>
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </defaultLocale>
+  
+  <metadataScope>
+    <MD_MetadataScope>
+      <resourceScope>
+        <mcc:MD_ScopeCode codeList="codelist.xml#MD_ScopeCode" codeListValue="service"/>
+      </resourceScope>
+    </MD_MetadataScope>
+  </metadataScope>
+  
+  <contact>
+    <cit:CI_Responsibility>
+      <cit:role>
+        <cit:CI_RoleCode codeList="codelist.xml#CI_RoleCode" codeListValue="originator"/>
+      </cit:role>
+      <cit:party>
+        <cit:CI_Organisation>
+          <cit:name>
+            <gco:CharacterString>Nome da organização que elaborou o metadado</gco:CharacterString>
+          </cit:name>
+        </cit:CI_Organisation>
+      </cit:party>
+    </cit:CI_Responsibility>
+  </contact>
+
+  <dateInfo>
+    <cit:CI_Date>
+      <cit:date>
+        <gco:Date>2020-07-17</gco:Date>
+      </cit:date>
+      <cit:dateType>
+        <cit:CI_DateTypeCode codeList="codelist.xml#CI_DateTypeCode" codeListValue="creation"/>
+      </cit:dateType>
+    </cit:CI_Date>
+  </dateInfo>
+  
+  <metadataStandard>
+    <cit:CI_Citation>
+      <cit:title>
+        <gco:CharacterString>ISO 19115-3:2014</gco:CharacterString>
+      </cit:title>
+    </cit:CI_Citation>
+  </metadataStandard>
+
+  <metadataProfile>
+    <cit:CI_Citation>
+      <cit:title>
+        <gco:CharacterString>Perfil MGB 2.0</gco:CharacterString>
+      </cit:title>
+    </cit:CI_Citation>
+  </metadataProfile>
+  
+  <identificationInfo>
+    <srv:SV_ServiceIdentification>
+      <mri:citation>
+        <cit:CI_Citation>
+          <cit:title>
+            <gco:CharacterString>Template para recurso do tipo serviço web com dados acoplados - MGB 2.0</gco:CharacterString>
+          </cit:title>
+          <cit:date>
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date></gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="codelist.xml#CI_DateTypeCode" codeListValue="creation"/>
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+        </cit:CI_Citation>
+      </mri:citation>
+      <mri:abstract>
+        <gco:CharacterString>Resumo descritivo do recurso do tipo serviço web com dados acoplados</gco:CharacterString>
+      </mri:abstract>
+      <mri:status>
+        <mcc:MD_ProgressCode codeListValue="" codeList="codelist.xml#MD_ProgressCode"/>
+      </mri:status>
+      <mri:pointOfContact>
+        <cit:CI_Responsibility>
+          <cit:role>
+            <cit:CI_RoleCode codeList="codelist.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+          </cit:role>
+          <cit:party>
+            <cit:CI_Organisation>
+              <cit:name>
+                <gco:CharacterString>Nome da organização que publicou o serviço web</gco:CharacterString>
+              </cit:name>
+            </cit:CI_Organisation>
+          </cit:party>
+        </cit:CI_Responsibility>
+      </mri:pointOfContact>
+      <srv:serviceType>
+        <gco:ScopedName codeSpace="urn:ogc:serviceType">visualização</gco:ScopedName>
+      </srv:serviceType>
+      <srv:couplingType>
+        <srv:SV_CouplingType codeList="codelist.xml#SV_CouplingType" codeListValue="tight"/>
+      </srv:couplingType>
+      <srv:coupledResource>
+        <srv:SV_CoupledResource>
+          <srv:resourceReference>
+            <cit:CI_Citation>
+              <cit:title>
+                <gco:CharacterString>Nome do recurso acoplado ao serviço web</gco:CharacterString>
+              </cit:title>
+            </cit:CI_Citation>
+          </srv:resourceReference>
+        </srv:SV_CoupledResource>
+      </srv:coupledResource>
+    </srv:SV_ServiceIdentification>
+  </identificationInfo>
+  
+</MD_Metadata>

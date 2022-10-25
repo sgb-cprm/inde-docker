@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://geonetwork-opensource.org/schemas/schema-ident"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://geonetwork-opensource.org/schemas/schema-ident http://geonetwork-opensource.org/schemas/schema-ident/schema-ident.xsd">
+  <name>iso19115-3.mgb</name>
+  <id>f6a671e9-85e0-4ae6-ab4e-caa5e2ded104</id>
+  <version>1.2</version>
+  <appMinorVersionSupported>3.5.0</appMinorVersionSupported>
+  <title xml:lang="pt">Perfil de Metadados Geoespaciais do Brasil 2ª ed. -- MGB 2.0</title>
+  <title xml:lang="en">Brazilian Geographic Metadata Profile 2nd ed. -- MGB 2.0</title>
+  <description xml:lang="pt">
+    Perfil MGB versão 2020, baseado no perfil ISO19115-3.2018.
+  </description>
+  <standardUrl>https://www.concar.gov.br/perfil_mgb.aspx</standardUrl>
+  <!-- FIXME: add all required schemas -->
+  <depends>iso19139</depends>
+  <depends>iso19115-3.2018</depends>
+  <schemaLocation>http://standards.iso.org/iso/19115/-3/mds/2.0 http://standards.iso.org/iso/19115/-3/mds/2.0/mds.xsd</schemaLocation>
+  <autodetect xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
+              xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0"
+              xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0"
+              xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
+              xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0"
+              xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0"
+              xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">
+    <!-- ISO19115-3 identification is based on the
+    root element of the record. It could be a MD_Metadata
+    element (for a metadata recocrd) or some other eleement
+    when used as a subtemplate (cf. directory support).
+    -->
+    <!--<elements type="root">
+      <mdb:MD_Metadata/>
+      <cit:CI_Responsibility/>
+      <cit:CI_Organisation/>
+      <mcc:MD_BrowseGraphic/>
+      <mrd:MD_Format/>
+      <mdq:DQ_DomainConsistency/>
+      <mdq:DQ_CompletenessCommission/>
+      <mdq:DQ_CompletenessOmission/>
+      <mdq:DQ_ConceptualConsistency/>
+      <mdq:DQ_FormatConsistency/>
+      <mdq:DQ_AbsoluteExternalPositionalAccuracy/>
+      <mdq:DQ_AccuracyOfATimeMeasurement/>
+      <mdq:DQ_Confidence/>
+      <mdq:DQ_GriddedDataPositionalAccuracy/>
+      <mdq:DQ_Homogeneity/>
+      <mdq:DQ_NonQuantitativeAttributeCorrectness/>
+      <mdq:DQ_QuantitativeAttributeAccuracy/>
+      <mdq:DQ_RelativeInternalPositionalAccuracy/>
+      <mdq:DQ_Representativity/>
+      <mdq:DQ_TemporalConsistency/>
+      <mdq:DQ_TemporalValidity/>
+      <mdq:DQ_ThematicClassificationCorrectness/>
+      <mdq:DQ_TopologicalConsistency/>
+      <mdq:DQ_UsabilityElement/>
+      <mco:MD_Constraints/>
+      <mco:MD_LegalConstraints/>
+      <mco:MD_SecurityConstraints/>
+      < ! - - TODO: Add subtemplate roots - - >
+    </elements>-->
+    <elements type="search">
+      <mdb:metadataProfile><cit:CI_Citation><cit:title><gco:CharacterString>Perfil MGB 2.0</gco:CharacterString></cit:title></cit:CI_Citation></mdb:metadataProfile>
+    </elements>
+  </autodetect>
+  <!--
+  Filters defined which elements should be removed
+  depending on user privileges.
+  -->
+  <filters xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">
+    <!--
+    All elemenets having a nilReason attribute
+    set to withheld, then users needs to have
+    the edit privilege in order to be able to see
+    the information. When filtered the element is
+    preserved but with no content in.
+    -->
+    <filter xpath="*//*[@gco:nilReason='withheld']"
+            ifNotOperation="editing">
+      <keepMarkedElement gco:nilReason="withheld"/>
+    </filter>
+
+    <!--
+    All online source having the following protocols
+    are filtered when user does not have download
+    privilege.
+    -->
+    <filter xpath="*//mrd:onLine[contains(*/cit:protocol/gco:CharacterString, 'DOWNLOAD') or
+                                  */cit:protocol/gco:CharacterString = 'FILE' or
+                                  */cit:protocol/gco:CharacterString = 'DB' or
+                                  */cit:protocol/gco:CharacterString = 'COPYFILE']"
+            ifNotOperation="download"/>
+
+    <!--
+    All online source having WMS protocol are filtered
+    to user not having dynamic privilege.
+    TODO: other type of services ?
+    -->
+    <filter xpath="*//mrd:onLine[starts-with(*/cit:protocol/gco:CharacterString, 'OGC:WMS')]"
+            ifNotOperation="dynamic"/>
+  </filters>
+</schema>

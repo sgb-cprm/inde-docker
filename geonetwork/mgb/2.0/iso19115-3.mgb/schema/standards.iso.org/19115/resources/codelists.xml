@@ -1,0 +1,3263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cat:CT_CodelistCatalogue
+  xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0"
+  xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+  xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--
+      This codelist catalog was created in 2020-06-28 by Emerson Xavier.
+  -->
+  <cat:name>
+    <gco:CharacterString>Codelists do Perfil MGB 2020</gco:CharacterString>
+  </cat:name>
+  <cat:scope>
+    <gco:CharacterString>Codelists para descrever metadados conformes com o Perfil MGB 2020, baseado na ISO 191115-1:2014</gco:CharacterString>
+  </cat:scope>
+  <cat:fieldOfApplication>
+    <gco:CharacterString>Codelists usados nos metadados baseados no Perfil MGB</gco:CharacterString>
+  </cat:fieldOfApplication>
+  <cat:versionNumber>
+    <gco:CharacterString>1.0</gco:CharacterString>
+  </cat:versionNumber>
+  <cat:versionDate>
+    <gco:Date>2020-06-28</gco:Date>
+  </cat:versionDate>
+  <cat:language>
+    <gco:CharacterString>por</gco:CharacterString>
+  </cat:language>
+  <cat:characterSet>
+    <lan:MD_CharacterSetCode codeList="#MD_CharacterSetCode" codeListValue="UTF-8"/>
+  </cat:characterSet>
+  <!-- ### Informação de Identificação ### -->
+  <cat:codelistItem>
+    <cat:CT_Codelist id="DS_AssociationTypeCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mri/1.0">DS_AssociationTypeCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mri/1.0">DS_AssociationTypeCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Explicação para o relacionamento de dois recursos</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DS_AssociationTypeCode_crossReference">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mri/1.0">crossReference</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Referência cruzada</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Referência de um recurso para outro</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DS_AssociationTypeCode_largerWorkCitation">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mri/1.0">largerWorkCitation</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Citação do trabalho principal</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Referência a um recurso principal do qual o agregado faz parte</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DS_AssociationTypeCode_partOfSeamlessDatabase">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mri/1.0">partOfSeamlessDatabase</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Parte de base contínua</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte de um mesmo conjunto de dados continuo e estruturado mantido em um computador</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DS_AssociationTypeCode_stereoMate">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mri/1.0">stereoMate</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Par estereoscópico</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte de um conjunto de imagens que, quando usadas juntas, fornecem imagens tridimensionais</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DS_AssociationTypeCode_isComposedOf">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mri/1.0">isComposedOf</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Composto de</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Referência a recursos que são partes deste recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DS_AssociationTypeCode_collectiveTitle">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mri/1.0">collectiveTitle</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Título coletivo</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Título comum para um conjunto de recursos. NOTA: título identifica elementos de uma série de maneira coletiva combinado a informações sobre que volumes estão disponíveis na fonte citada.</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DS_AssociationTypeCode_series">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mri/1.0">series</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Série</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Associados através de uma herança comum bem como aqueles produzidos para uma especificação de produto comum</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DS_AssociationTypeCode_dependency">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mri/1.0">dependency</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Dependência</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Associado por dependência</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DS_AssociationTypeCode_revisionOf">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mri/1.0">revisionOf</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Revisão de</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>O recurso é uma revisão de um outro a ele associado</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <!-- ### Informação de Restrição ### -->
+  <cat:codelistItem>
+    <cat:CT_Codelist id="MD_ClassificationCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">MD_ClassificationCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">MD_ClassificationCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Nome das restrições de manuseio aplicáveis ao recurso</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ClassificationCode_unclassified">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">unclassified</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Não classificado</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Disponível para divulgação geral</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ClassificationCode_restricted">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">restricted</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Reservado</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Não disponível para divulgação geral</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ClassificationCode_secret">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">secret</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Secreto</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Mantido ou para ser mantido em segredo, desconhecido, ou oculto para todos a não ser um grupo seleto de pessoas</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ClassificationCode_topSecret">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">topSecret</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Ultrassecreto</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Do maior nível de segredo</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ClassificationCode_protected">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">protected</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Protegido</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Compartilhamento da informação pode causar dano</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ClassificationCode_limitedDistribution">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">limitedDistribution</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Distribuição limitada</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Disseminação limitada por um organismo responsável</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <cat:codelistItem>
+    <cat:CT_Codelist id="MD_RestrictionCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">MD_RestrictionCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">MD_RestrictionCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Limitação imposta sobre o acesso ou uso do dado</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_RestrictionCode_copyright">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">copyright</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Direitos autorais</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Direito exclusivo de publicação, produção ou venda dos direitos para um trabalho literário, dramático, musical ou artístico, ou para o uso de uma reprodução ou rótulo comercial legalmente consignado por período de tempo específico a um autor, compositor, artista ou distribuidor</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_RestrictionCode_patent">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">patent</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Patente</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Direito exclusivo concedido pelo governo para produzir, vender, utilizar ou licenciar um invento ou descoberta</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_RestrictionCode_patentPending">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">patentPending</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Aguardando patente</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação produzida ou vendida aguardando patente</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_RestrictionCode_trademark">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">trademark</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Marca registrada</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Designação, sigla, símbolo ou outro emblema identificador de um produto oficialmente registrada(o) e legalmente restringida(o) para o uso do proprietário ou do fabricante</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_RestrictionCode_licence">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">licence</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Licença</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Permissão formal para fazer algo </gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_RestrictionCode_intellectualPropertyRights">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">intellectualPropertyRights</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Direitos de propriedade intelectual</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Direitos a benefícios financeiros e controle da distribuição de bens não tangíveis, resultantes de processos criativos</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_RestrictionCode_restricted">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">restricted</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Restrito</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Bloqueado para circulação geral ou divulgação </gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_RestrictionCode_otherRestrictions">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">otherRestrictions</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Outras restrições</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Limitação não listada</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_RestrictionCode_unrestricted">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">unrestricted</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Sem restrições</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Não existem restrições</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_RestrictionCode_licenceUnrestricted">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">licenceUnrestricted</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Licença não restringida</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Permissão formal para usar o recurso não é requerida</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_RestrictionCode_licenceEndUser">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">licenceEndUser</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Licença de usuário final</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Permissão formal requerida a uma entidade ou pessoa para utilizar o recurso e que pode diferir da pessoa que a encomenda ou compra</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_RestrictionCode_licenceDistributor">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">licenceDistributor</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Licença de distribuição</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Permissão formal requerida a uma pessoa ou entidade para comercializar ou distribuir o recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_RestrictionCode_private">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">private</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Privado</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Protege os direitos de particulares ou organizações da observação, intrusão ou atenção dos demais</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_RestrictionCode_confidential">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mco/1.0">confidential</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Confidencial</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Não disponível para o público. NOTA: contém informação que poderia ser prejudicial a um interesse comercial, industrial ou nacional.</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <!-- ### Informação de Manutenção ### -->
+  <cat:codelistItem>
+    <cat:CT_Codelist id="MD_MaintenanceFrequencyCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mmi/1.0">MD_MaintenanceFrequencyCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mmi/1.0">MD_MaintenanceFrequencyCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Frequência com a qual modificações são feitas no dado após sua produção inicial </gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_MaintenanceFrequencyCode_continual">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mmi/1.0">continual</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Contínuo</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>O recurso é repetidamente e frequentemente atualizado</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_MaintenanceFrequencyCode_daily">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mmi/1.0">daily</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Diária</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>O recurso é atualizado todo dia</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_MaintenanceFrequencyCode_weekly">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mmi/1.0">weekly</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Semanal</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>O recurso é atualizado a cada semana</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_MaintenanceFrequencyCode_fortnightly">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mmi/1.0">fortnightly</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Quinzenal</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>O recurso é atualizado a cada quinze dias</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_MaintenanceFrequencyCode_monthly">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mmi/1.0">monthly</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Mensal</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>O recurso é atualizado todo mês</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_MaintenanceFrequencyCode_quarterly">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mmi/1.0">quarterly</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Trimestral</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>O recurso é atualizado a cada três meses</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_MaintenanceFrequencyCode_biannually">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mmi/1.0">biannually</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Bianual</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>O recurso é atualizado duas vezes por ano</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_MaintenanceFrequencyCode_annually">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mmi/1.0">annually</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Anual</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>O recurso é atualizado anualmente</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_MaintenanceFrequencyCode_asNeeded">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mmi/1.0">asNeeded</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Conforme necessidade</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>O recurso é atualizado conforme necessidade</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_MaintenanceFrequencyCode_irregular">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mmi/1.0">irregular</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Irregular</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>O recurso é atualizado em intervalos de durações desiguais</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_MaintenanceFrequencyCode_periodic">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mmi/1.0">periodic</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Periódica</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>O recurso é atualizado em intervalos regulares</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_MaintenanceFrequencyCode_biennially">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mmi/1.0">biennially</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Bienal</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>O recurso é atualizado a cada dois anos</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_MaintenanceFrequencyCode_quinquenal">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mmi/1.0">quinquenal</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Quinquenal</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>O recurso é atualizado a cada cinco anos</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_MaintenanceFrequencyCode_bimestral">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mmi/1.0">bimestral</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Bimestral</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>O recurso é atualizado a cada dois meses</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <!-- ### Informação de Representação Espacial ### -->
+  <cat:codelistItem>
+    <cat:CT_Codelist id="MD_CellGeometryCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">MD_CellGeometryCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">MD_CellGeometryCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Código indicativo da geometria representada pelo valor da célula da grade</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_CellGeometryCode_point">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">point</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Ponto</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Cada célula representa um ponto</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_CellGeometryCode_area">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">area</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Área</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Cada célula representa uma área</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_CellGeometryCode_voxel">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">voxel</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Voxel</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Cada célula representa uma medida volumétrica em uma grade regular em um espaço tridimensional</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_CellGeometryCode_stratum">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">stratum</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Camada</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Variação de altitude para um perfil vertical associado a um ponto </gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <cat:codelistItem>
+    <cat:CT_Codelist id="MD_DimensionNameTypeCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">MD_DimensionNameTypeCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">MD_DimensionNameTypeCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Nome da dimensão</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_DimensionNameTypeCode_row">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">row</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Linha</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Eixo das ordenadas (y)</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_DimensionNameTypeCode_column">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">column</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Coluna</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Eixo das abscissas (x)</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_DimensionNameTypeCode_vertical">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">vertical</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Vertical</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Eixo vertical (z)</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_DimensionNameTypeCode_track">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">track</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Trajetória</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Na direção do movimento do ponto de varredura</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_DimensionNameTypeCode_crossTrack">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">crossTrack</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Perpendicular à trajetória </gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Perpendicular à direção do movimento do ponto de varredura</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_DimensionNameTypeCode_line">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">line</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Linha</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Linha de varredura de um sensor</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_DimensionNameTypeCode_sample">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">sample</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Amostra</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Elemento ao longo de uma linha de varredura</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_DimensionNameTypeCode_time">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">time</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Tempo</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Duração</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <cat:codelistItem>
+    <cat:CT_Codelist id="MD_GeometricObjectTypeCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">MD_GeometricObjectTypeCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">MD_GeometricObjectTypeCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Nome dos objetos vetoriais usados para localizar posições zero-, uni-, bi- ou tridimensionais no conjunto de dados</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_GeometricObjectTypeCode_complex">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">complex</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Complexo</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Conjunto de primitivas geométricas cujos limites podem ser representados como a união de outras primitivas</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_GeometricObjectTypeCode_composite">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">composite</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Composto</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Conjunto conectado de curvas, sólidos ou superfícies</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_GeometricObjectTypeCode_curve">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">curve</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Curva</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Primitiva geométrica unidimensional, limitada, representando a imagem contínua de uma linha</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_GeometricObjectTypeCode_point">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">point</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Ponto</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Primitiva geométrica zero dimensional representando uma posição sem extensão</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_GeometricObjectTypeCode_solid">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">solid</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Sólido</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Primitiva geométrica tridimensional, conectada e limitada, representando a imagem contínua de uma região do espaço</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_GeometricObjectTypeCode_surface">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">surface</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Superfície</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Primitiva geométrica bidimensional, conectada e limitada, representando a imagem contínua de uma região de um plano</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <cat:codelistItem>
+    <cat:CT_Codelist id="MD_PixelOrientationCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">MD_PixelOrientationCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">MD_PixelOrientationCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Ponto num pixel correspondente à localização terrestre do pixel</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_PixelOrientationCode_center">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">center</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Centro</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Ponto a meio caminho entre o canto inferior esquerdo e o superior direito do pixel</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_PixelOrientationCode_lowerLeft">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">lowerLeft</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Inferior esquerdo</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>O canto do pixel mais próximo à origem do sistema de referência espacial; se dois estão à mesma distância da origem, aquele com o menor valor de X</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_PixelOrientationCode_lowerRight">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">lowerRight</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Inferior direito</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Canto seguinte ao canto inferior esquerdo no sentido anti-horário</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_PixelOrientationCode_upperRight">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">upperRight</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Superior direito</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Canto seguinte ao canto inferior direito no sentido anti-horário </gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_PixelOrientationCode_upperLeft">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">upperLeft</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Superior esquerdo</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Canto seguinte ao canto superior direito no sentido anti-horário </gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <cat:codelistItem>
+    <cat:CT_Codelist id="MD_TopologyLevelCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">MD_TopologyLevelCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">MD_TopologyLevelCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Grau de complexidade das relações espaciais</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_TopologyLevelCode_geometryOnly">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">geometryOnly</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Apenas geometria</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Objetos geométricos sem qualquer estrutura adicional que descreva topologia</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_TopologyLevelCode_topology1D">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">topology1D</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Topologia 1D</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Complexo topológico unidimensional - geralmente denominado topologia “cadeia-nó”</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_TopologyLevelCode_planarGraph">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">planarGraph</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Grafo plano</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Complexo topológico unidimensional plano. NOTA: um grafo plano é um grafo que pode ser desenhado em um plano de modo que nenhuma de suas arestas se interceptam, a não ser que em um vértice.</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_TopologyLevelCode_fullPlanarGraph">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">fullPlanarGraph</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Grafo plano completo</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Complexo topológico bidimensional plano. NOTA: um complexo topológico bidimensional é comumente denomin-ado “topologia completa” em um ambiente cartográfico bidimensional.</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_TopologyLevelCode_surfaceGraph">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">surfaceGraph</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Grafo de superfície</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Complexo topológico unidimensional isomórfico a um subconjunto de uma superfície. NOTA: um complexo geométrico é isomórfico a um complexo topológico se seus elementos estão em correspondência um a um, preservando as dimensões e os limites entre si.</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_TopologyLevelCode_fullSurfaceGraph">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">fullSurfaceGraph</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Grafo de superfície completo</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Complexo topológico bidimensional isomórfico a um subconjunto de uma superfície</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_TopologyLevelCode_topology3D">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">topology3D</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Topologia 3D</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Complexo topológico tridimensional. NOTA: um complexo topológico é uma coleção de primitivas topológicas que são fechadas sob as operações de contorno.</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_TopologyLevelCode_fullTopology3D">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">fullTopology3D</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Topologia 3D completa</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Cobertura completa de um espaço tridimensional euclideano</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_TopologyLevelCode_abstract">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/msr/2.0">abstract</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Abstrato</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Complexo topológico sem nenhuma realização geométrica especificada</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <!-- ### Informação de Conteúdo ### -->
+  <cat:codelistItem>
+    <cat:CT_Codelist id="MD_CoverageContentTypeCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">MD_CoverageContentTypeCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">MD_CoverageContentTypeCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Tipo específico de informação representada na célula</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_CoverageContentTypeCode_image">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">image</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Imagem</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Representação numérica do significado de um parâmetro físico, mas que não é o real valor daquele parâmetro</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_CoverageContentTypeCode_thematicClassification">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">thematicClassification</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Classificação temática</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Valor codificado sem significado quantitativo, usado para representar uma quantidade física</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_CoverageContentTypeCode_physicalMeasurement">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">physicalMeasurement</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Medida física</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Valor em unidades físicas da quantidade sendo medida</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_CoverageContentTypeCode_qualityInformation">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">qualityInformation</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Informação de qualidade</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Dado usado para caracterizar a qualidade de uma medida física</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_CoverageContentTypeCode_referenceInformation">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">referenceInformation</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Informação de referência</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação de referência usada para apoiar o cálculo ou uso da cobertura de uma medida física no conjunto de dados</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_CoverageContentTypeCode_modelResult">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">modelResult</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Resultado de modelo</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Recursos com valores que são calculados usando um modelo em vez de serem observados ou calculados a partir de observações</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <cat:codelistItem>
+    <cat:CT_Codelist id="MD_ImagingConditionCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">MD_ImagingConditionCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">MD_ImagingConditionCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Código que indica condições que podem ter afetado a imagem </gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ImagingConditionCode_blurredImage">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">blurredImage</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Imagem embaçada</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte da imagem encontra-se embaçada</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ImagingConditionCode_cloud">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">cloud</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Nublada</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte da imagem apresenta cobertura de nuvens</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ImagingConditionCode_degradingObliquity">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">degradingObliquity</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Obliquidade degradante</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Ângulo agudo entre o plano da órbita terrestre e o plano do equador celeste</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ImagingConditionCode_fog">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">fog</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Neblina</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte da imagem está coberta por neblina</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ImagingConditionCode_heavySmokeOrDust">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">heavySmokeOrDust</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Forte fumaça ou poeira</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte da imagem está coberta por fumaça densa ou poeira</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ImagingConditionCode_night">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">night</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Noturna</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>A imagem foi tomada à noite</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ImagingConditionCode_rain">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">rain</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Chuva</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>A imagem foi tomada durante chuva</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ImagingConditionCode_semiDarkness">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">semiDarkness</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Semiescuridão</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>A imagem foi tomada em período de se-miescuridão (amanhecer ou anoitecer)</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ImagingConditionCode_shadow">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">shadow</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Sombra</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte da imagem está obscurecida por sombras</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ImagingConditionCode_snow">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">snow</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Neve</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte da imagem está obscurecida por neve</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ImagingConditionCode_terrainMasking">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mrc/2.0">terrainMasking</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Obstrução de terreno</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>A falta de dados em determinada parte da imagem foi causada pela posição relativa de algumas feições no terreno localizadas entre o observador e o alvo</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <!-- ### Informação de Serviço ### -->
+  <cat:codelistItem>
+    <cat:CT_Codelist id="DCPList">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/srv/2.0">DCPList</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/srv/2.0">DCPList</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Plataforma de computação distribuída referenciada </gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DCPList_XML">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/srv/2.0">XML</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">XML</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Extensible Markup Language</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DCPList_CORBA">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/srv/2.0">CORBA</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">CORBA</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Common Object Request Broker Architecture</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DCPList_JAVA">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/srv/2.0">JAVA</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">JAVA</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Linguagem de programação Java</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DCPList_COM">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/srv/2.0">COM</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">COM</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Component Object Model</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DCPList_SQL">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/srv/2.0">SQL</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">SQL</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Structured Query Language</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DCPList_SOAP">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/srv/2.0">SOAP</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">SOAP</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Simple Object Access Protocol</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DCPList_Z3950">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/srv/2.0">Z3950</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Z3950</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Protocolo descrito na ISO 23950 (1998)</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DCPList_HTTP">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/srv/2.0">HTTP</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">HTTP</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>HyperText Transfer Protocol</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DCPList_FTP">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/srv/2.0">FTP</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">FTP</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>File Transfer Protocol</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DCPList_WebServices">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/srv/2.0">WebServices</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Serviços web</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Serviços web</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <cat:codelistItem>
+    <cat:CT_Codelist id="SV_CouplingType">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/srv/2.0">SV_CouplingType</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/srv/2.0">SV_CouplingType</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Tipo de relação entre o serviço e um possível conjunto de dados associado</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="SV_CouplingType_loose">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/srv/2.0">loose</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Fraco</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>A instância do serviço é fracamente acoplada a uma instância de dados, ou seja, não há a necessidade de descrever um MD_DataIdentification</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="SV_CouplingType_mixed">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/srv/2.0">mixed</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Misto</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>A instância de serviço é mediamente acoplada a uma instância de dados, ou seja, os dados podem ser descritos por meio de um MD_DataIdentification</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="SV_CouplingType_tight">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/srv/2.0">tight</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Forte</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>A instância de serviço é fortemente acoplada a uma instância de dados, ou seja, os dados devem ser descritos por meio do MD_DataIdentification, e a linha 5 da Tabela 29 passa a ser mandatória</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <!-- ### Informação de Citação ### -->
+  <cat:codelistItem>
+    <cat:CT_Codelist id="CI_DateTypeCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">CI_DateTypeCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">CI_DateTypeCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Identificação de quando um dado evento ocorre</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_DateTypeCode_creation">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">creation</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Criação</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>A data identifica quando o recurso passou a existir</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_DateTypeCode_publication">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">publication</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Publicação</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>A data identifica quando o recurso foi publicado</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_DateTypeCode_revision">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">revision</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Revisão</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>A data identifica quando o recurso foi examinado ou reexaminado e melhorado ou alterado</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_DateTypeCode_expiry">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">expiry</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Expiração</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>A data identifica quando o recurso expirou</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_DateTypeCode_nextUpdate">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">nextUpdate</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Próxima atualização</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>A data identifica quando será a próxima atualização do recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_DateTypeCode_unavailable">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">unavailable</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Não disponível</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>A data identifica quando o recurso se tornou indisponível ou não obtenível</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_DateTypeCode_deprecated">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">deprecated</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Descontinuado</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>A data identifica quando o recurso foi descontinuado ou se tornou obsoleto</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_DateTypeCode_distribution">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">distribution</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Distribuição</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>A data identifica quando uma instância do recurso foi distribuída</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <cat:codelistItem>
+    <cat:CT_Codelist id="CI_OnLineFunctionCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">CI_OnLineFunctionCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">CI_OnLineFunctionCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Função habilitada pelo recurso</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_OnLineFunctionCode_download">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">download</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Download</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Instruções online para transferência de dados de um dispositivo de armazenamento ou sistema para outro</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_OnLineFunctionCode_information">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">information</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Informação</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação online sobre o recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_OnLineFunctionCode_offlineAccess">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">offlineAccess</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Acesso offline</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Instruções online para requisição do recurso diretamente do provedor</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_OnLineFunctionCode_order">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">order</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Pedido</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Processo de pedido online para obtenção do recurso </gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_OnLineFunctionCode_search">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">search</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Busca</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Interface de pesquisa online para buscar informação sobre o recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_OnLineFunctionCode_completeMetadata">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">completeMetadata</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Metadados</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Metadados completos </gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_OnLineFunctionCode_browseGraphic">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">browseGraphic</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Representação gráfica</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Representação gráfica miniaturizada do recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_OnLineFunctionCode_upload">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">upload</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Upload</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Função online de carregamento do recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_OnLineFunctionCode_browsing">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">browsing</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Navegação</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Navegação online </gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_OnLineFunctionCode_fileAccess">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">fileAccess</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Acesso a arquivos</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Acesso online a arquivos </gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <cat:codelistItem>
+    <cat:CT_Codelist id="CI_RoleCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">CI_RoleCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">CI_RoleCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Função realizada pela parte responsável</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_RoleCode_resourceProvider">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">resourceProvider</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Provedor</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte que fornece o recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_RoleCode_custodian">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">custodian</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Detentor </gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte que aceita a responsabilidade e a prestação de contas pelo recurso e assegura o cuidado e manutenção apropriados do mesmo</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_RoleCode_owner">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">owner</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Proprietário</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte que é proprietária do recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_RoleCode_distributor">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">distributor</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Distribuidor</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte que distribui o recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_RoleCode_originator">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">originator</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Criador</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte que criou o recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_RoleCode_pointOfContact">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">pointOfContact</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Contato</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte que pode ser contatada para saber mais sobre ou adquirir o recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_RoleCode_processor">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">processor</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Processador</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte que processou os dados de modo que o recurso tenha sido modificado</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_RoleCode_publisher">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">publisher</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Editor </gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte que publicou o recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_RoleCode_author">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">author</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Autor</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte autora do recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_RoleCode_sponsor">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">sponsor</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Patrocinador</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte que oferece o recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_RoleCode_coAuthor">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">coAuthor</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Coautor</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte que é coautora do recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_RoleCode_collaborator">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">collaborator</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Colaborador</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte que apoia a geração do recurso além do pesquisador principal</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_RoleCode_editor">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">editor</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Revisor </gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte que revisou ou modificou o recurso visando melhorar o conteúdo</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_RoleCode_rightsHolder">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">rightsHolder</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Detentor dos direitos</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte que possui ou gerencia direitos sobre o recurso </gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_RoleCode_contributor">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">contributor</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Contribuidor</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte que contribui para o recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_RoleCode_funder">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/cit/2.0">funder</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Financiador</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Parte que fornece suporte monetário em prol do recurso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <cat:codelistItem>
+    <cat:CT_Codelist id="CI_UFCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">CI_UFCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">CI_UFCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Lista controlada para designar as unidades da federação no Brasil</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_AC">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">AC</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Acre</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Acre</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_AL">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">AL</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Alagoas</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se às Alagoas</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_AM">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">AM</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Amazonas</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Amazonas</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_AP">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">AP</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Amapá</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Amapá</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_BA">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">BA</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Bahia</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se à Bahia</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_CE">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">CE</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Ceará</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Ceará</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_DF">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">DF</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Distrito Federal</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Distrito Federal</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_ES">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">ES</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Espírito Santo</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Espírito Santo</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_GO">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">GO</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Goiás</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Goiás</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_MA">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">MA</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Maranhão</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Maranhão</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_MG">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">MG</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Minas Gerais</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se às Minas Gerais</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_MS">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">MS</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Mato Grosso do Sul</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Mato Grosso do Sul</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_MT">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">MT</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Mato Grosso</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Mato Grosso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_PA">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">PA</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Pará</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Pará</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_PB">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">PB</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Paraíba</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se à Paraíba</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_PE">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">PE</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Pernambuco</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Pernambuco</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_PI">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">PI</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Piauí</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Piauí</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_PR">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">PR</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Paraná</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Paraná</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_RJ">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">RJ</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Rio de Janeiro</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Rio de Janeiro</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_RN">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">RN</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Rio Grande do Norte</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Rio Grande do Norte</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_RO">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">RO</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Rondônia</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se à Rondônia</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_RR">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">RR</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Roraima</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se à Roraima</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_RS">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">RS</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Rio Grande do Sul</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Rio Grande do Sul</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_SC">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">SC</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Santa Catarina</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se à Santa Catarina</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_SE">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">SE</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Sergipe</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Sergipe</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_SP">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">SP</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">São Paulo</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao São Paulo</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CI_UFCode_TO">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">TO</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Tocantins</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Tocantins</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <!-- ### Classes Comuns ### -->
+  <cat:codelistItem>
+    <cat:CT_Codelist id="MD_ProgressCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">MD_ProgressCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">MD_ProgressCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Status do recurso</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ProgressCode_completed">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">completed</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Concluído</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Foi completado</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ProgressCode_historicalArchive">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">historicalArchive</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Arquivo histórico</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Armazenado em um repositório offline</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ProgressCode_obsolete">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">obsolete</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Obsoleto</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Não mais relevante</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ProgressCode_onGoing">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">onGoing</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Em andamento</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Atualização contínua</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ProgressCode_planned">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">planned</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Planejado</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Uma data foi fixada na qual o recurso será criado ou atualizado</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ProgressCode_required">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">required</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Requerido</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Necessita ser gerado ou atualizado</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ProgressCode_underDevelopment">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">underDevelopment</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Em desenvolvimento</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Atualmente em processo de ser criado</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ProgressCode_superseded">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">superseded</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Substituído</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Substituído por um novo</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <cat:codelistItem>
+    <cat:CT_Codelist id="MD_ScopeCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">MD_ScopeCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">MD_ScopeCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Classe de informação à qual a entidade de referência se aplica</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_attribute">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">attribute</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Atributo</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável ao valor do atributo</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_attributeType">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">attributeType</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Tipo de atributo</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável à característica de uma feição</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_collectionHardware">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">collectionHardware</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Coleção de hardware</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável à classe de coleção de hardware</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_dataset">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">dataset</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Conjunto de dados</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável ao conjunto de dados</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_series">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">series</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Série</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável à série</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_nonGeographicDataset">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">nonGeographicDataset</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Conjunto de dados não geográfico</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável a dados não geográficos</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_feature">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">feature</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Feição</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável a uma feição</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_featureType">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">featureType</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Tipo de feição</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável a um tipo de feição</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_propertyType">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">propertyType</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Tipo de propriedade</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável a um tipo de propriedade</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_fieldSession">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">fieldSession</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Sessão de campo</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável a uma sessão de campo</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_software">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">software</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Software</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável a um programa de computador ou rotina</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_service">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">service</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Serviço</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável a uma capacidade que uma entidade provedora de serviço disponibiliza a uma entidade usuária do serviço através de um conjunto de interfaces que definem um comportamento como um caso de uso</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_model">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">model</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Modelo</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável a uma cópia ou imitação de um objeto existente ou hipotético</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_tile">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">tile</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Tile</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável a um tile, i.e., um subconjunto espacial de dados geográficos</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_metadata">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">metadata</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Metadados</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável a metadados</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_initiative">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">initiative</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Iniciativa</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável a uma iniciativa</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_sample">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">sample</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Amostra</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável a uma amostra</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_document">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">document</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Documento</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável a um documento</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_repository">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">repository</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Repositório</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável a um repositório</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_collection">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">collection</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Coleção</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Informação aplicável a um conjunto desestruturado</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_ScopeCode_application">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">application</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Aplicação</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Recurso de funcionalidade hospedado em um conjunto específico de hardware e acessível por uma rede</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <cat:codelistItem>
+    <cat:CT_Codelist id="MD_SpatialRepresentationTypeCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">MD_SpatialRepresentationTypeCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">MD_SpatialRepresentationTypeCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Método usado para representar informação geográfica no recurso</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_SpatialRepresentationTypeCode_vector">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">vector</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Vetor</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Dados vetoriais são usados para representar dados geográficos</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_SpatialRepresentationTypeCode_grid">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">grid</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Matricial</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Dados matriciais são usados para representar dados geográficos</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_SpatialRepresentationTypeCode_textTable">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">textTable</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Texto ou tabela</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Dados textuais ou tabulares usados para representar dados geográficos</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_SpatialRepresentationTypeCode_tin">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">tin</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Rede triangular irregular</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Rede triangular irregular</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_SpatialRepresentationTypeCode_stereoModel">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">stereoModel</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Modelo estereoscópico</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Visão tridimensional formada pela intersecção de raios homólogos de um par de imagens superpostas</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_SpatialRepresentationTypeCode_video">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/mcc/1.0">video</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Vídeo</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Cena de uma gravação em vídeo</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <cat:codelistItem>
+    <cat:CT_Codelist id="LanguageCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">LanguageCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">LanguageCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Código que identifica o idioma utilizado</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="LanguageCode_por">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">por</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Português</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Idioma português</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="LanguageCode_eng">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">eng</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Inglês</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Idioma inglês</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="LanguageCode_spa">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">spa</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Espanhol</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Idioma espanhol</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="LanguageCode_fra">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">fra</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Francês</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Idioma francês</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="LanguageCode_deu">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">deu</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Alemão</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Idioma alemão</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="LanguageCode_ita">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">ita</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Italiano</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Idioma italiano</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="LanguageCode_chi">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">chi</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Chinês</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Idioma chinês tradicional</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <cat:codelistItem>
+    <cat:CT_Codelist id="CountryCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">CountryCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">CountryCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Código que identifica um determinado país</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CountryCode_BRA">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">BRA</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Brasil</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Brasil</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CountryCode_USA">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">USA</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Estados Unidos</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se aos Estados Unidos</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CountryCode_CHN">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">CHN</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">China</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se à China</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CountryCode_GBR">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">GBR</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Reino Unido</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Reino Unido</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CountryCode_ARG">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">ARG</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Argentina</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se à Argentina</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CountryCode_URY">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">URY</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Uruguai</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Uruguai</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CountryCode_PRY">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">PRY</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Paraguai</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Paraguai</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="CountryCode_DEU">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">DEU</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Alemanha</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se à Alemanha</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <cat:codelistItem>
+    <cat:CT_Codelist id="MD_CharacterSetCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">MD_CharacterSetCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">MD_CharacterSetCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Identifica determinado código para conjuntos de caracteres</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_CharacterSetCode_UTF-8">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">UTF-8</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">UTF-8</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao UTF-8</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_CharacterSetCode_ISO-8859-1">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">ISO-8859-1</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">ISO-8859-1</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Também conhecido por latin1, LATIN1</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_CharacterSetCode_US-ASCII">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">US-ASCII</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">US-ASCII</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Também conhecido por IBM367, us</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_CharacterSetCode_Windows-1252">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">Windows-1252</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Windows-1252</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Refere-se ao Windows-1252</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="MD_CharacterSetCode_ISO-8859-14">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19115/-3/lan/1.0">ISO-8859-14</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">ISO-8859-14</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Também conhecido por latin8</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+    </cat:CT_Codelist>
+  </cat:codelistItem>
+  <cat:codelistItem>
+    <cat:CT_Codelist id="DQ_EvaluationMethodTypeCode">
+      <cat:identifier>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19157/-2/mdq/1.0">DQ_EvaluationMethodTypeCode</gco:ScopedName>
+      </cat:identifier>
+      <cat:name>
+        <gco:ScopedName codeSpace="http://standards.iso.org/iso/19157/-2/mdq/1.0">DQ_EvaluationMethodTypeCode</gco:ScopedName>
+      </cat:name>
+      <cat:definition>
+        <gco:CharacterString>Tipo do método de avaliação de uma determinada medida de qualidade</gco:CharacterString>
+      </cat:definition>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DQ_EvaluationMethodTypeCode_directInternal">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19157/-2/mdq/1.0">directInternal</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Direto interno</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Método de inspeção de um produto baseado na inspeção de itens apenas pertencentes ao conjunto de dados avaliado</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DQ_EvaluationMethodTypeCode_directExternal">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19157/-2/mdq/1.0">directExternal</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Direto externo</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Método de inspeção de um produto baseado na inspeção de itens, mas que os dados de referência são externos ao conjunto de dados avaliado</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+      <cat:codeEntry>
+        <cat:CT_CodelistValue id="DQ_EvaluationMethodTypeCode_indirect">
+          <cat:identifier>
+            <gco:ScopedName codeSpace="http://standards.iso.org/iso/19157/-2/mdq/1.0">indirect</gco:ScopedName>
+          </cat:identifier>
+          <cat:name>
+            <gco:ScopedName codeSpace="http://inde.gov.br/mgb/2.0">Indireto</gco:ScopedName>
+          </cat:name>
+          <cat:definition>
+            <gco:CharacterString>Método de avaliação da qualidade de um produto usando conhecimento externo, como a linhagem, por exemplo</gco:CharacterString>
+          </cat:definition>
+        </cat:CT_CodelistValue>
+      </cat:codeEntry>
+     </cat:CT_Codelist>
+  </cat:codelistItem>
+</cat:CT_CodelistCatalogue>

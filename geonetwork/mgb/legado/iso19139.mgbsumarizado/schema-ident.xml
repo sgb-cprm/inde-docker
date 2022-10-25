@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://geonetwork-opensource.org/schemas/schema-ident"
+        xmlns:mgb="http://www.ibge.gov.br/2014/mgb"
+        xsi:schemaLocation="http://geonetwork-opensource.org/schemas/schema-ident http://geonetwork-opensource.org/schemas/schema-ident/schema-ident.xsd">
+  <name>iso19139.mgbsumarizado</name>
+  <id>3ba72a23-9128-496e-b198-1777b84808ec</id>
+  <version>1.1</version>
+  <appMinorVersionSupported>3.4.0</appMinorVersionSupported>
+  <title xml:lang="pt">Perfil de Metadados Geoespaciais do Brasil (Perfil MGB Sumarizado)</title>
+  <title xml:lang="en">Brazilian Geospatial Metadata Profile (MGB Sumarizado Profile)</title>
+  <description xml:lang="pt">
+    Recomenda-se que na descrição de dados geoespaciais de referência
+    (Mapeamento Geográfico, Topográfico Terrestre Básico e Especiais definidos no
+    SCN) seja preenchido o perfil MGB completo, que contempla as principais seções
+    da norma ISO 19115.
+  </description>
+  <standardUrl>https://www.concar.gov.br/perfil_mgb.aspx</standardUrl>
+  <depends>iso19139</depends>
+    <!-- 19139:2007 version -->
+  <schemaLocation>http://www.isotc211.org/2005/gmd http://schemas.opengis.net/csw/2.0.2/profiles/apiso/1.0.0/apiso.xsd</schemaLocation>
+  <!-- 19139:2005 version
+  <schemaLocation>http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd
+                  http://www.isotc211.org/2005/gmx http://www.isotc211.org/2005/gmx/gmx.xsd
+                  http://www.isotc211.org/2005/srv http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd
+  </schemaLocation>-->
+  <autodetect xmlns:gmd="http://www.isotc211.org/2005/gmd"
+              xmlns:gco="http://www.isotc211.org/2005/gco">
+    <namespaces xmlns:mgb="http://www.ibge.gov.br/2014/mgb"/>
+  </autodetect>
+  <readwriteUuid>false</readwriteUuid>
+</schema>

@@ -1,63 +1,65 @@
-# Argumento padrão em cima da versão que usa HSQL, para testes
-ARG GEONETWORK_IMAGE_TAG=3.10.2
+# https://geonetwork-opensource.org/manuals/3.10.x/en/install-guide/installing-from-source-code.html
+FROM maven:3.8-openjdk-8 AS BUILDER
 
-# The BUILDER stage is to get zipfiles from INDE portal and corrct some files before geonetwork config
-FROM geonetwork:${GEONETWORK_IMAGE_TAG}
+ARG GEONETWORK_VERSION=3.10.2
+ARG MAVEN_OPTS="-Xmx512M"
 
-ARG MGB2_DOWNLOAD_URL=https://metadados.inde.gov.br/downloads/perfil-mgb2-20220216.zip
-ARG MGB_LEGACY_DOWNLOAD_URL=https://metadados.inde.gov.br/downloads/perfis-mgb-20220216.zip
-ARG GEONETWORK_MODS_DOWNLOAD_URL=https://metadados.inde.gov.br/downloads/alteracoes-geonetwork-20210423.zip
+ENV MAVEN_OPTS ${MAVEN_OPTS}
 
-WORKDIR /tmp
+WORKDIR /root
 
-# Ajustar locale para pt_BR
-RUN apt-get -y update && \
-    apt-get -y install locales wget && \    
-    sed -i '/pt_BR.UTF-8/s/^# //g' /etc/locale.gen && \
-    locale-gen && \
-    apt-get -y autoremove --purge && \
-    rm -rf /var/lib/apt/lists/*
+RUN git clone https://github.com/geonetwork/core-geonetwork.git geonetwork
 
-ENV LC_ALL=pt_BR.UTF-8 \
-    LANG=pt_BR.UTF-8 \
-    LANGUAGE=pt_BR:pt
+WORKDIR /root/geonetwork
 
-# Arquivos para o geonetwork reconhecer os perfis INDE
-ENV MGB_CONFIG_FILE=config-spring-mgb.xml \
-    MGB2_CONFIG_FILE=config-spring-mgb-2.xml
+RUN set -xe && \
+    git checkout tags/${GEONETWORK_VERSION} -b docker-builder && \
+    git submodule init && \
+    git submodule update
 
-# Customizações do DBDG/INDE
-RUN tmpfile=inde-mods.zip && \
-    wget -qO ${tmpfile} ${GEONETWORK_MODS_DOWNLOAD_URL} && \
-    unzip -qo ${tmpfile} -d ${CATALINA_HOME}/webapps && returncode=$? || returncode=$? && \
-    if [ returncode -gt 1 ]; then exit returncode; fi && \
-    rm -rf ${tmpfile}
+VOLUME ["/root/.m2"]
 
-# Perfil completo MGB 2.0
-RUN tmpfile=mgb2.zip && \
-    wget -qO ${tmpfile} ${MGB2_DOWNLOAD_URL} && \
-    unzip -qo ${tmpfile} && returncode=$? || returncode=$? && \
-    if [ $returncode -gt 1 ]; then exit $returncode; fi && \
-    cp -rp mgb2/* ${DATA_DIR}/config/schema_plugins && \
-    rm -rf ${tmpfile} mgb2/ && \
-    mv ${DATA_DIR}/config/schema_plugins/${MGB2_CONFIG_FILE} \
-        ${CATALINA_HOME}/webapps/geonetwork/WEB-INF
+# Mods and builds
+# Change obsolete PostgreSQL JDBC and old repos
+# Force log4j to 2.17.1 
+# - https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720
+# - https://snyk.io/blog/log4shell-remediation-cheat-sheet/
+RUN sed -i 's/<pg\.version>[^<]*</<pg.version>42.2.18</g' pom.xml && \
+    sed -i 's/http:\/\/download.osgeo.org\/webdav\/geotools\//https:\/\/repo.osgeo.org\/repository\/release/g' pom.xml && \
+    sed -i 's/https:\/\/packages.georchestra.org\/artifactory\/mapfish-print/https:\/\/artifactory.georchestra.org\/artifactory\/geonetwork-github-cache/g' pom.xml && \
+    sed -ir 's/<log4j2\.version>[0-2]{1}+\.[0-9]{1,2}[0-9\.]*<\//<log4j2\.version>2.17.1<\//g' pom.xml && \
+    mvn clean install -DskipTests
 
-# Perfil legado MGB (completo e simplificado)
-RUN tmpfile=mgb.zip && \
-    wget -qO ${tmpfile} ${MGB_LEGACY_DOWNLOAD_URL} && \
-    unzip -qo ${tmpfile} && returncode=$? || returncode=$? && \
-    if [ $returncode -gt 1 ]; then exit $returncode; fi && \
-    cp -rp mgb/* ${DATA_DIR}/config/schema_plugins && \
-    rm -rf ${tmpfile} mgb/&& \
-    mv ${DATA_DIR}/config/schema_plugins/${MGB_CONFIG_FILE} \
-        ${CATALINA_HOME}/webapps/geonetwork/WEB-INF
+# INDE Metadata profiles and patches
+# https://inde.gov.br/Suporte/InstalacaoGN
+COPY ["mgb/legado/", "mgb/2.0/", "web/target/geonetwork/WEB-INF/data/config/schema_plugins/"]
+COPY patch/ web/target/geonetwork/
 
-# Habilitar os perfis no geonetwork
-RUN sed -i '49i <import resource="config-spring-mgb.xml"/>\n<import resource="config-spring-mgb-2.xml"/>' \
-        ${CATALINA_HOME}/webapps/geonetwork/WEB-INF/config-spring-geonetwork.xml   
+# Enable MGB Profiles in geonetwork
+RUN mv web/target/geonetwork/WEB-INF/data/config/schema_plugins/config-spring-mgb*.xml web/target/geonetwork/WEB-INF && \
+    sed -i '49i <import resource="config-spring-mgb.xml"/>\n<import resource="config-spring-mgb-2.xml"/>' \
+        ./web/target/geonetwork/WEB-INF/config-spring-geonetwork.xml
+
+
+FROM tomcat:8.5-jre8-openjdk-slim-bullseye AS RELEASE
+
+LABEL org.opencontainers.image.source https://github.com/sgb-cprm/inde-docker
+
+ENV GEONETWORK_DATA_DIR="/srv/geonetwork/data" \
+    GEONETWORK_LUCENE_DIR="/srv/geonetwork/lucene" \
+    GEONETWORK_DB_TYPE="h2"
+
+# Copy built
+COPY --from=BUILDER /root/geonetwork/web/target/geonetwork/ ${CATALINA_HOME}/webapps/geonetwork/
+
+# Entrypoint
+COPY docker-entrypoint.sh /
+
+RUN chmod +x /docker-entrypoint.sh
 
 # Definições de JVM, de acordo com o manual da INDE
-ENV CATALINA_OPS="-Xms2048m -Xmx2048m -XX:NewRatio=2 -XX:SurvivorRatio=10"
+ENV CATALINA_OPTS="-Xms2048m -Xmx2048m -XX:NewRatio=2 -XX:SurvivorRatio=10"
 
-WORKDIR ${CATALINA_HOME}
+ENTRYPOINT ["/docker-entrypoint.sh"]
+
+CMD ["catalina.sh", "run"]
