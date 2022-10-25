@@ -43,7 +43,14 @@ RUN mv web/target/geonetwork/WEB-INF/data/config/schema_plugins/config-spring-mg
 
 FROM tomcat:8.5-jre8-openjdk-slim-bullseye AS RELEASE
 
+ARG GEONETWORK_VERSION
+
+LABEL org.opencontainers.image.title "Geonetwork INDE"
+LABEL org.opencontainers.image.description "Geonetwork adaptado para aplicação de perfis de metadados MGB(1,2) da INDE"
+LABEL org.opencontainers.image.vendor "SGB/CPRM"
+LABEL org.opencontainers.image.version $GEONETWORK_VERSION
 LABEL org.opencontainers.image.source https://github.com/sgb-cprm/inde-docker
+LABEL org.opencontainers.image.authors "Carlos Eduardo Mota <carlos.mota@cprm.gov.br>"
 
 ENV GEONETWORK_DATA_DIR="/srv/geonetwork/data" \
     GEONETWORK_LUCENE_DIR="/srv/geonetwork/lucene" \
