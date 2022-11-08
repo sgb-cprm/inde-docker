@@ -27,7 +27,7 @@ VOLUME ["/root/.m2"]
 RUN sed -i 's/<pg\.version>[^<]*</<pg.version>42.2.18</g' pom.xml && \
     sed -i 's/http:\/\/download.osgeo.org\/webdav\/geotools\//https:\/\/repo.osgeo.org\/repository\/release/g' pom.xml && \
     sed -i 's/https:\/\/packages.georchestra.org\/artifactory\/mapfish-print/https:\/\/artifactory.georchestra.org\/artifactory\/geonetwork-github-cache/g' pom.xml && \
-    sed -ir 's/<log4j2\.version>[0-2]{1}+\.[0-9]{1,2}[0-9\.]*<\//<log4j2\.version>2.17.1<\//g' pom.xml && \
+    sed -i 's/<log4j2\.version>[^<]*</<log4j2\.version>2.17.1</g' pom.xml && \
     mvn clean install -DskipTests
 
 # INDE Metadata profiles and patches
