@@ -38,6 +38,17 @@ RUN sed -i 's/<pg\.version>[^<]*</<pg.version>42.2.18</g' pom.xml && \
 COPY ["mgb/legado/", "mgb/2.0/", "web/target/geonetwork/WEB-INF/data/config/schema_plugins/"]
 COPY patch/ web/target/geonetwork/
 
+# Enable Rootless & move the default h2 db to /tmp (avoid change tomcat dir permissions)
+RUN sed -i -r "s/jdbc.database=.*$/jdbc.database=\/tmp\/gn/g" web/target/geonetwork/WEB-INF/config-db/jdbc.properties && \
+    chgrp -R 0 \
+        web/target/geonetwork/WEB-INF/config-db/ \
+        web/target/geonetwork/WEB-INF/config-node/ \
+        web/target/geonetwork/WEB-INF/data/ && \
+    chmod -R g=u \
+        web/target/geonetwork/WEB-INF/config-db/ \
+        web/target/geonetwork/WEB-INF/config-node/ \
+        web/target/geonetwork/WEB-INF/data/ 
+
 # Enable MGB Profiles in geonetwork
 RUN mv web/target/geonetwork/WEB-INF/data/config/schema_plugins/config-spring-mgb*.xml web/target/geonetwork/WEB-INF && \
     sed -i '49i <import resource="config-spring-mgb.xml"/>\n<import resource="config-spring-mgb-2.xml"/>' \
@@ -48,6 +59,8 @@ FROM tomcat:${TOMCAT_IMAGE_TAG} AS RELEASE
 
 ARG GEONETWORK_VERSION
 
+ARG DATA_DIR=/srv/geonetwork
+
 LABEL org.opencontainers.image.title "Geonetwork INDE"
 LABEL org.opencontainers.image.description "Geonetwork adaptado para aplicação de perfis de metadados MGB(1,2) da INDE"
 LABEL org.opencontainers.image.vendor "SGB/CPRM"
@@ -55,8 +68,8 @@ LABEL org.opencontainers.image.version $GEONETWORK_VERSION
 LABEL org.opencontainers.image.source https://github.com/sgb-cprm/inde-docker
 LABEL org.opencontainers.image.authors "Carlos Eduardo Mota <carlos.mota@cprm.gov.br>"
 
-ENV GEONETWORK_DATA_DIR="/srv/geonetwork/data" \
-    GEONETWORK_LUCENE_DIR="/srv/geonetwork/lucene" \
+ENV GEONETWORK_DATA_DIR="${DATA_DIR}/data" \
+    GEONETWORK_LUCENE_DIR="${DATA_DIR}/lucene" \
     GEONETWORK_DB_TYPE="h2"
 
 # Copy built
@@ -65,7 +78,10 @@ COPY --from=BUILDER /root/geonetwork/web/target/geonetwork/ ${CATALINA_HOME}/web
 # Entrypoint
 COPY docker-entrypoint.sh /
 
-RUN chmod +x /docker-entrypoint.sh
+RUN mkdir -p $GEONETWORK_DATA_DIR $GEONETWORK_LUCENE_DIR && \
+    chgrp -R 0 $GEONETWORK_DATA_DIR $GEONETWORK_LUCENE_DIR && \
+    chmod -R g=u $GEONETWORK_DATA_DIR $GEONETWORK_LUCENE_DIR && \
+    chmod +x /docker-entrypoint.sh
 
 # Definições de JVM, de acordo com o manual da INDE
 ENV CATALINA_OPTS="-Xms2048m -Xmx2048m -XX:NewRatio=2 -XX:SurvivorRatio=10"
