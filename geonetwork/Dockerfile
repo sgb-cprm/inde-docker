@@ -2,7 +2,7 @@
 ARG MAVEN_IMAGE_TAG=3.8-eclipse-temurin-8
 ARG TOMCAT_IMAGE_TAG=8.5-jre8-temurin-jammy
 
-FROM maven:${MAVEN_IMAGE_TAG} AS BUILDER
+FROM docker.io/library/maven:${MAVEN_IMAGE_TAG} AS BUILDER
 
 ARG GEONETWORK_VERSION=3.10.2
 ARG MAVEN_OPTS="-Xmx512M"
@@ -55,7 +55,7 @@ RUN mv web/target/geonetwork/WEB-INF/data/config/schema_plugins/config-spring-mg
         ./web/target/geonetwork/WEB-INF/config-spring-geonetwork.xml
 
 
-FROM tomcat:${TOMCAT_IMAGE_TAG} AS RELEASE
+FROM docker.io/library/tomcat:${TOMCAT_IMAGE_TAG} AS RELEASE
 
 ARG GEONETWORK_VERSION
 
